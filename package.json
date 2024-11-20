@@ -4,7 +4,7 @@
   "description": "a customizable chat application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "lessc source/index.less source/compiled.css && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/benuthoff/chat/issues"
   },
-  "homepage": "https://github.com/benuthoff/chat#readme"
+  "homepage": "https://github.com/benuthoff/chat#readme",
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
 }
